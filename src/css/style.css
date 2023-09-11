@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* display: grid;
+  place-items: center; */
+}
+
+header {
+  width: 80%;
+  height: 90%;
+  /* border: 1px solid #000; */
+  background: linear-gradient(125deg, #74a436, #018a1f);
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+}
+
+header section,
+aside {
+  width: 93%;
+  height: 100%;
+  position: relative;
+}
+
+header aside {
+  width: 7%;
+}
+
+header section {
+  padding: 15px 5%;
+}
+
+header section nav{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid #000; */
+}
+
+header section nav h3{
+  color: #fff;
+}
+
+header section nav h3 span{
+  font-weight: 300;
+}
+
+header section ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header section ul li {
+  list-style-type: none;
+  padding: 0px 10px;
+}
+
+header section ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 500;
+  transition: .3s linear;
+}
+
+header section ul li a:hover{
+  color: rgb(255,255,255,.5);
+}
+
+header section .content {
+  margin-top: 60px;
+}
+
+header section .content .num{
+  position: relative;
+  margin-left: 100px;
+  color: #fff;
+  font-size: 30px;
+}
+
+header section .content .num::before {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 1px;
+  background: rgb(255,255,255,.8);
+  left: 55px;
+  bottom: 11px;
+}
+
+header section .content .num span:nth-child(2) {
+  color: rgb(255,255,255,.5);
+  font-size: 11px;
+  margin-left: 2px;
+  font-weight: 500;
+}
+
+header section .content h1 {
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 600;
+  color: #fff;
+}
+
+header section .content p {
+  font-size: 12px;
+  width: 280px;
+  word-break: break-all;
+  color: rgb(255,255,255,.7);
+}
+
+header section .content a {
+  font-size: 12px;
+  position: relative;
+  top: 20px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 25px;
+}
+
+header section .content a:hover {
+  border-radius: 10px;
+}
+
+header section .content .sr_change {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+  color: #fff;
+  position: relative;
+  z-index: 9999999999999999;
+}
+
+header section .content .sr_change h6 {
+  margin: 0 10px;
+}
+
+header section .content .sr_change h6:nth-child(1) {
+  margin-left: 0;
+}
+
+header section .content .sr_change h5 {
+  width: 0;
+  height: .5px;
+  background: rgb(255,255,255,.8);
+  transition: 1s linear;
+}
+
+header section .content .sr_change h5:nth-child(2) {
+  width: 200px;
+}
+
+header section .main{
+  position: absolute;
+  color: #fff;
+  font-size: 10rem;
+  font-weight: 800;
+  bottom: -30px;
+  z-index: 1;
+}
+
+header section .greenade {
+  position: absolute;
+  width: 400px;
+  left: 35%;
+  top: 14%;
+  filter: drop-shadow(30px 30px 20px rgb(0,0,0,.8))
+  drop-shadow(50px 50px 20px rgb(0,0,0,.2 ));
+  z-index: 1;
+}
+
+header aside {
+  box-shadow: -20px 0 20px rgb(0,0,0,.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header aside .menu {
+  color: #fff;
+  font-size: 25px;
+}
+
+header aside ul {
+  position: relative;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header aside ul li {
+  list-style: none;
+  padding: 20px 3px;
+  transition: .3s linear;
+}
+
+header aside ul li {
+  list-style: none;
+  padding: 20px 3px;
+  transition: .3s linear;
+}
+
+header aside ul li a{
+  position: relative;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5px 8px;
+  border-radius: 50%;
+}
+
+header aside ul li:hover {
+  transform: rotate(360deg);
+}
